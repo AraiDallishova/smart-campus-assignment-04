@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Campus - Room Availability Checker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Smart Campus Room Checker</h1>
+    <p class="sub">Fixed current time: <strong id="now"></strong> (fictional data)</p>
+
+    <section id="filters" aria-label="Requirements">
+      <h2>1. Requirements</h2>
+      <label>Attendees <input id="attendees" type="number" min="1" inputmode="numeric" placeholder="e.g. 10"></label>
+      <div id="equipment" class="chips" aria-label="Required equipment"></div>
+    </section>
+
+    <section aria-label="Rooms">
+      <h2>2. Choose a room</h2>
+      <div id="rooms" class="rooms"></div>
+    </section>
+
+    <section aria-label="Time">
+      <h2>3. Check availability</h2>
+      <div class="row">
+        <label>Start <input id="start" placeholder="HH:MM"></label>
+        <label>End <input id="end" placeholder="HH:MM"></label>
+        <button id="check" type="button">Check</button>
+      </div>
+      <div id="result" aria-live="polite"></div>
+    </section>
+  </main>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

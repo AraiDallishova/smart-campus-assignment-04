@@ -1,0 +1,13 @@
+{
+  "name": "smart-campus-room-checker",
+  "version": "2.0.0",
+  "description": "Assignment #04 - Smart Campus Room Availability Checker (refactored, multi-room)",
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-reporter=spec",
+    "test:v1": "node --test --test-reporter=spec --test-name-pattern=\"v1\" tests/regression.test.js",
+    "test:regression": "node --test --test-reporter=spec tests/regression.test.js",
+    "start": "python3 -m http.server 8080"
+  },
+  "license": "MIT"
+}
